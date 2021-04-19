@@ -42,6 +42,9 @@ namespace _2_2Practice
                     isbomb(ref bomb, table[r - 1, c-1]);//左上
                     isbomb(ref bomb, table[r - 1, c]);//上
                     isbomb(ref bomb, table[r-1, c+1]);//右上
+                }
+                else if(r-1>0 & r+1<10 & c-1<=0 & c + 1 < 10)
+                {
 
                 }
             }
@@ -49,7 +52,6 @@ namespace _2_2Practice
 
         void isbomb(ref int bomb,string str)
         {
-            
             if (str == "*")
             {
                 bomb += 1;
@@ -95,6 +97,6 @@ namespace _2_2Practice
             r -= 1;
             c += 1;
         }
-        }
+        
     }
 }

@@ -19,13 +19,15 @@ namespace _2_2Practice
                 rowcol(ref r ,ref c ,num[i]);
                 table[r,c] = "*";
             }
-            Response.Write("<table>");
+
+
+            Response.Write("<table border='1px'>");
             for(int i = 0; i < 10; i++)
             {
-                Response.Write("<tr>");
+                Response.Write("<tr >");
                 for (int j = 0; j < 10; j++)
                 {
-                    Response.Write("<td>");
+                    Response.Write("<td >");
                     Response.Write(table[i, j]);
                     Response.Write("</td>");
                 }
